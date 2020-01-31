@@ -1,0 +1,112 @@
+.Landing {
+    box-sizing: border-box;
+    color: #8b1500;
+    display: flex;
+    flex-flow: column;
+    font-size: 18px;
+    height: 100%;
+    text-align: center;
+}
+
+.Landing a {
+    text-decoration: none;
+}
+
+@media screen and (max-height: 520px) {
+    .Landing_heading {
+        display: none;
+    }
+}
+
+@media screen and (min-height: 520px) {
+    .Landing_heading_small {
+        display: none;
+    }
+}
+
+.Landing_blij {
+    height: 40px;
+    margin-bottom: -3px;
+}
+
+.Landing_title {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0 0 0;
+    flex: 1;
+}
+
+.Landing_subtitle {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 280px;
+}
+
+.Landing_circle {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.Landing_circle .Circle {
+    height: 250px;
+}
+
+.Landing_text {
+    margin: 0 auto;
+    padding: 12px 0 12px;
+    width: 280px;
+}
+
+.Landing_footer {
+    margin: 0 auto;
+    padding: 12px 0 12px;
+    width: 280px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8B1400;
+
+}
+
+.Landing_button {
+    background: #e95f32;
+    color: #ffffff;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 16px;
+    width: 100%;
+}
+
+.Landing_heading .Landing_navbar {
+    text-align: right;
+}
+
+.Landing_heading_small .Landing_navbar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Landing_navbar {
+    padding: 12px 12px 4px;
+    width: 100%;
+}
+
+.Landing_login {
+    border: 1px solid #e95f32;
+    border-radius: 2px;
+    color: #e95f32;
+    font-size: 18px;
+    padding: 5px 12px;
+}
+
+.arrow-right-div-landing {
+    right: 15px;
+    top: 31px;
+    height: calc(100% - 31px * 2);
+    position: absolute;
+    width: 30px;
+}

@@ -1,5 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root, #root > div:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.center-screen {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    font-size: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.fixed-img {
+    height: 43%;
+    width: 100%;
+    margin-top: 0;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+@media screen and (max-height: 520px) {
+    .fixed-img {
+        height: 35vh;
+    }
+}
+
+.arrow-left {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    background-color: transparent;
+    width: 30px;
+}
+
+.arrow-right {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    background-color: transparent;
+    width: 30px;
+}
+
+.arrow-right-div {
+    float: right;
+    width: 30px;
+}
+
+.arrow-left-div {
+    float: left;
+    width: 30px;
+}
+
+.arrow-img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.img-left {
+    transform: rotate(180deg);
+}
+
+.react-swipeable-view-container,
+.react-swipeable-view-container > div,
+.react-swipeable-view-container > div > div,
+.root-container {
+    height: 100%;
 }

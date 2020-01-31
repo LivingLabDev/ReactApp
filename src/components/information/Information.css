@@ -1,0 +1,131 @@
+.Information {
+    scroll-margin-top: 10px;
+    background-color: white;
+    overflow: visible;
+    padding: 12px 0;
+    display: flex;
+    height: 40vh;
+
+    flex: 1;
+    flex-flow: column;
+}
+
+@media screen and (max-height: 520px) {
+    .Information {
+        height: 65vh;
+    }
+}
+
+.Information_text {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    margin: 110px 0 0;
+    flex: 1;
+    /*overflow: auto;*/
+}
+
+.Information_text > div {
+    font-size: 18px;
+    margin: 0;
+}
+
+@media screen and (max-height: 520px) {
+    .Information_text {
+        margin: calc(125px * 0.8 - 10px) 0 0;
+    }
+}
+
+.Information_blij {
+    height: 20px;
+    margin-left: 0;
+    margin-bottom: -3px;
+}
+
+.information-button {
+    display: inline-block;
+    width: 140px;
+    background-color: #e7342a;
+    color: white;
+    padding: 10px 0 14px 0;
+    margin: 0 8px 0 8px;
+    border: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+    cursor: pointer;
+    height: 54px;
+}
+
+.more-link {
+    text-decoration: none;
+}
+
+.more-buttons {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#info-p {
+    margin-top: 8px;
+}
+
+.Information_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
+    height: 58px;
+}
+
+.Information_footer p {
+    font-size: 22px;
+    margin: 0;
+    color: #009640;
+}
+
+.Information_title {
+    padding-top: 60px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+.Information_description {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.Information_hash {
+    margin-top: 8px;
+    font-size: 10px;
+}
+
+.Information_titles {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.red-button {
+    width: 100px;
+    height: 120px;
+    background-color: red;
+    color: white;
+}
+
+.slot-img {
+    display: inline-block;
+    vertical-align: -.51ex;
+    width: 30px;
+    height: 30px;
+    padding: 5px 0 0;
+    margin: 0 -5px;
+}
+
+.slot-img svg path {
+    fill: #000;
+}

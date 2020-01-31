@@ -1,0 +1,10 @@
+.blockchain-root {
+    overflow:scroll !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.blockchain-root img {
+    max-width: 100%;
+}

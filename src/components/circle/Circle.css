@@ -1,0 +1,110 @@
+.Circle {
+    position: fixed;
+    top: calc(43% - 125px);
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 250px;
+
+    transition: transform 150ms, top 350ms;
+}
+
+@media screen and (max-height: 520px) {
+    .Circle {
+        transform: scale(.8);
+        transform-origin: center;
+        top: calc(36.5% - 125px);
+    }
+}
+
+.Circle svg {
+    max-height: 250px;
+    height: 100%;
+}
+
+.Circle path {
+    transition: opacity 150ms;
+}
+
+.Circle stop {
+    transition: stop-color 350ms;
+}
+
+.Circle_landing defs,
+.Circle_harvest defs {
+    --stop-1: #ffef26;
+    --stop-2: #fdc800;
+    --stop-3: #fdc800;
+    --stop-4: #fab80f;
+    --stop-5: #f18f34;
+    --stop-6: #e95f32;
+    --stop-7: #e74e30;
+    --stop-8: #e3312d;
+}
+
+.Circle_baked defs,
+.Circle_ending defs {
+    --stop-1: #00a6d0;
+    --stop-2: #00a6d0;
+    --stop-3: #00a6d0;
+    --stop-4: #00b2d7;
+    --stop-5: #00c2df;
+    --stop-6: #00d8eb;
+    --stop-7: #00eaf4;
+    --stop-8: #00ffff;
+}
+
+.Circle_sow defs {
+    --stop-1: #3cff2e;
+    --stop-2: #3cff2e;
+    --stop-3: #3cff2e;
+    --stop-4: #3cff2e;
+    --stop-5: #23d336;
+    --stop-6: #06a13e;
+    --stop-7: #009640;
+    --stop-8: #009640;
+}
+
+.Circle_bakery defs {
+    --stop-1: #e3312d;
+    --stop-2: #d23a3a;
+    --stop-3: #c34144;
+    --stop-4: #7b6778;
+    --stop-5: #2991b3;
+    --stop-6: #00a6d0;
+    --stop-7: #00a6d0;
+    --stop-8: #00a6d0;
+}
+
+.Circle_miller defs {
+    --stop-1: #f18f34;
+    --stop-2: #fa3838;
+    --stop-3: #ff003a;
+    --stop-4: #f10535;
+    --stop-5: #d50e2b;
+    --stop-6: #c41424;
+    --stop-7: #c11523;
+    --stop-8: #be1622;
+}
+
+.Circle_landing #path7871,
+.Circle_landing #path7869,
+.Circle_ending #path7871,
+.Circle_ending #path7869,
+.Circle_sow #path7835,
+.Circle_sow #path7831,
+.Circle_harvest #path7793,
+.Circle_harvest #path7789,
+.Circle_miller #path3858,
+.Circle_miller #path7755,
+.Circle_bakery #path7791,
+.Circle_bakery #path7795,
+.Circle_baked #path7829,
+.Circle_baked #path7833 {
+    opacity: 100;
+}
+
+
+.Circle_invisible {
+    display: none;
+}
+
